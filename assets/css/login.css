@@ -1,0 +1,17 @@
+.form-box { 
+	padding-top: 200px;
+}
+.f1 {
+    padding: 25px 25px 25px 25px;
+}
+
+@media all and (max-width: 991px) {
+.form-box { 
+	padding-top: 150px;
+}
+}
+@media all and (max-width: 766px) {
+	.form-box { 
+	padding-top: 14px;
+}
+}

@@ -1,0 +1,17 @@
+.activeMsg{
+	text-align: center;
+	background-color: #e69b9b;
+	color: white;
+	padding: 10px;
+}
+
+@media (max-width: 768px){
+	.activeMsg{
+		margin-top: -1px;
+	}
+}
+@media (min-width: 1200px){}
+.container {
+    margin-top: 140px;
+}
+}

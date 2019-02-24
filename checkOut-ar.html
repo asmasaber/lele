@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkout</title>
+		<link rel="icon" href="assets/images/icon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+        <!-- Arabic Font-->
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+        <!-- CSS Links -->
+		<link rel="stylesheet" href="assets/css/checkOut-ar.css"> 
+		<link rel="stylesheet" href="assets/css/checkOutSteps-ar.css"> 
+        <link rel="stylesheet" type="text/css" href="assets/css/ar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/options-ar.css">
+		
+   </head>
+
+    <body>
+        <!-- Menu -->
+    <div id="wrap" >
+        <header class="fixedElement">
+            <div class="inner relative">
+                <a class="logo" href="Store.html"><img src="assets/images/icon.png" alt="fresh design web" ></a>
+                <a id="menu-toggle" class="button dark" href="#" ><i class="glyphicon glyphicon-align-justify"></i> </a>
+                <a id="searchIcon" class="searchIcon"><i class="glyphicon glyphicon-search" aria-hidden="true" ></i> </a>
+                <nav id="navigation">
+                    <ul id="main-menu">
+                        <li class="current-menu-item"><a href="Store.html">Store</a></li>
+                        <li><a href="#">Network</a></li>
+                        <li class="parent " >
+                            <a href="#" id="history_toggle">History </a>
+                            <ul class="sub-menu" id="history_submenu">
+                                <li><a href="#"> Order History </a></li>
+                                <li><a href="#">  Transactions History</a></li>
+                                <li><a href="#"> Network History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Cart.html"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" ></i> Cart (4)</a></li>
+                        <li class="parent"  style="background-image: url()">
+                            <a href="#" id="User_toggle"> <i class="glyphicon glyphicon-user"></i> User Name <i class="glyphicon glyphicon-menu-down"></i></a>
+                            <ul class="sub-menu" id="User_submenu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Favorites</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li ><a href="Store-ar.html" ><i class="glyphicon glyphicon-globe" aria-hidden="true" id="TransIcon"></i> </a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>   
+    </div> 
+        <!-- Top content -->
+        <div class="top-content" >
+            <div class="container-fuild">
+                <div class="row" style="margin-right: 0px;margin-left: 0px">
+					<div class="col-sm-4    form-box side-section" >
+						<a id="toggleCart"> Hide Cart Summary </a>
+                        <div class="table-responsive table-sm " id="CartSummary">
+                                  <table class="table borderless">
+                                    <tr>
+                                        <td>
+                                            <div class="product-thumbnail">
+                                            <div class="product-thumbnail__wrapper ">
+                                                 <img alt="" class="product-thumbnail__image" src="assets\images\mmm.jpg">
+                                            </div>
+                                            <span class="product-thumbnail__quantity" aria-hidden="true">2</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__description" >
+                                            <span class="product__description__name order-summary__emphasis">product name </span>
+                                          </td>
+                                          <td class="product__price" style=" padding-top: 13px;">
+                                            <span class="order-summary__emphasis">$376.00</span>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-thumbnail">
+                                            <div class="product-thumbnail__wrapper ">
+                                                 <img alt="" class="product-thumbnail__image" src="assets\images\mmm.jpg">
+                                            </div>
+                                            <span class="product-thumbnail__quantity" aria-hidden="true">2</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__description" >
+                                            <span class="product__description__name order-summary__emphasis">product name </span>
+                                          </td>
+                                          <td class="product__price" style=" padding-top: 13px;">
+                                            <span class="order-summary__emphasis">$376.00</span>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-thumbnail">
+                                            <div class="product-thumbnail__wrapper ">
+                                                 <img alt="" class="product-thumbnail__image" src="assets\images\mmm.jpg">
+                                            </div>
+                                            <span class="product-thumbnail__quantity" aria-hidden="true">2</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__description" >
+                                            <span class="product__description__name order-summary__emphasis">product name </span>
+                                          </td>
+                                          <td class="product__price" style=" padding-top: 13px;">
+                                            <span class="order-summary__emphasis">$376.00</span>
+                                          </td>
+                                    </tr>
+                                  </table>
+                        </div>
+                        <div class="table-responsive table-sm ">
+                            <table class="table borderless">
+                            <tr>
+                                <td>
+                                    subtotal: 
+                                </td>
+                                <td id="subTotalValue">
+                                    1000
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    Shipping: 
+                                </td>
+                                <td id="shippingValue">
+                                    -
+                                </td>
+                            </tr>
+                            </table>
+                        </div>
+                        <div class=" table-sm ">
+                            <table class="table borderless">
+                            <tr>
+                                <td>
+                                    Total: 
+                                </td>
+                                <td id="totalValue">
+                                    1000
+                                </td>
+                            </tr>
+                            </table>
+                        </div>
+					</div>
+                   
+                    <div class="col-sm-6    form-box" >
+                    	<form id="Rfrom" role="form" action="#" method="post" class="f1" style="background:#fdfbf;">
+                    		<h3 style="display:inline">Check out </h3>
+							
+                    		<p></p>
+                    		<div class="f1-steps">
+                    			<div class="f1-progress">
+                    			    <div class="f1-progress-line" data-now-value="12.66" data-number-of-steps="4" style="width: 12.66%;"></div>
+                    			</div>
+                                <div class="f1-step active">
+                                    <div class="f1-step-icon"><i class="fa fa-id-card-o"></i></div>
+                                    <p>Customer Info.</p>
+                                </div>
+                    			<div class="f1-step ">
+                    				<div class="f1-step-icon"><i class="fa fa-bicycle"></i></div>
+                    				<p>Recive Method</p>
+                    			</div>
+                                <div class="f1-step">
+                                    <div class="f1-step-icon"><i class="fa fa fa-money"></i></div>
+                                    <p>Payment Method</p>
+                                </div>
+                    			<div class="f1-step">
+                    				<div class="f1-step-icon"><i class="fa fa-handshake-o"></i></div>
+                    				<p>Finalize Order</p>
+                    			</div>
+                    		</div>
+                            <fieldset>
+                                 <h4>Phone </h4>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-phone">Mobile</label>
+                                    <input  type="text" name="f1-phone" placeholder="Mobile..." class="f1-email form-control" id="f1-phone">
+                                    <p id="MobileError" class="error" ></p>
+                                </div>
+                                <h4>Address </h4>
+                                <div class="form-group drp" >
+                                    <label class="sr-only" for="f1-Country">Country</label>
+                                    <select id="CountryList" class="selectpicker form-control"  >
+                                      <option >Egypt</option>
+                                    </select>                                   
+                                </div>
+                                <div class="form-group drp" >
+                                    <label class="sr-only" for="f1-Country">City</label>
+                                    <select id="CityList" class="selectpicker form-control" style="width:50%">
+                                      <option style="font-color:black">Assuit</option>
+                                      <option >Sohag</option>
+                                      <option >Cario</option>
+                                    </select>                                   
+                                </div>
+                               <div class="form-group">
+                                    <label class="sr-only" for="f1-area">Area</label>
+                                    <textarea  type="textarea" name="f1-area" placeholder="Area..." class="f1-area form-control" id="f1-area"></textarea>
+                                </div>
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-next continue" id="checkcustomerinfo">Next</button>
+                                   
+                                </div>
+                            </fieldset>
+                            
+                    		<fieldset class="cf">
+                    		    <h4>Choose Recive Method: </h4>
+                    			<section class="recive-method cf">
+                                    <input type="radio" name="rdReciveMethod" id="onStore" value="onStore" checked/><label class="onStore-label two col" for="onStore"><h2 style="font-size: 20px"> onStore</h2> <p style="font-size: 14px"> You can recive your order from: Address </p></label>
+                                    <input type="radio" name="rdReciveMethod" id="shipping" value="shipping" /><label class="shipping-label two col" for="shipping">
+                                    <h2 style="font-size: 20px"> Shipping </h2> <p style="font-size: 14px" id="shipping-address">  </p>
+
+                                     </label>
+                                </section>
+                                 <div class="f1-buttons">
+                                    <button id="checkrecivemethod" type="button" class="btn btn-next continue" >Next</button>
+                                    <button type="button" class="btn btn-previous  continue-prev">Previous</button> 
+                                </div>  
+                            </fieldset>
+                            <fieldset class="cf">
+                                <h4>Choose Recive Method: </h4>
+                                <section class="recive-method cf">
+                                    <input type="radio" name="rdPaymentMethod" id="cash" value="cash"><label class="cash-label four col" for="cash">Cash</label>
+                                    <input type="radio" name="rdPaymentMethod" id="fromRevnue" value="fromRevnue" ><label class="fromRevnue-label four col" for="fromRevnue">From Revnue</label>
+                                     <input type="radio" name="rdPaymentMethod" id="online" value="online" checked><label class="online-label four col" for="online">Online </label>
+                                </section>
+                                 <div class="f1-buttons">
+                                    <button id="checkpymentmethod" type="button" class="btn btn-next continue" >Next</button>
+                                    <button type="button" class="btn btn-previous  continue-prev">Previous</button> 
+                                </div>  
+                            </fieldset>
+                            
+							 <fieldset >
+								
+                                <h4>Finalize Order: </h4>
+								<div class="table-responsive table-sm " style="border-bottom: 0px">
+                                  <table class="table borderless" >
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                Phone: 
+                                            </h4>
+                                        </td>
+                                        <td>
+                                            <p id="phoneNumber">
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>
+                                            <h4>
+                                                Address: 
+                                            </h4>
+                                        </td>
+                                        <td>
+                                            <p id="address">
+                                               
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                Recive Method: 
+                                            </h4>
+                                        </td>
+                                        <td>
+                                            <p id="checkedReciveType">
+                                               
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                Payment Method: 
+                                            </h4>
+                                        </td>
+                                        <td>
+                                            <p id="checkedPaymentType">
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                  </table>
+                                </div>
+								<div class="f1-buttons">
+                                    <button type="submit" class="btn btn-next continue continue-next" id="checkID">Complate</button>
+                                    <button type="button" class="btn btn-previous  continue-prev">Previous</button> 
+									
+                                </div>
+                               
+                            </fieldset>
+                    	</form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+        <script type="text/Javascript" src="assets/js/checkOut.js"></script>		
+        <script type="text/javascript" src="assets/js/menu.js"></script>   
+    </body>
+
+</html>

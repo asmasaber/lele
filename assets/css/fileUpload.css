@@ -1,0 +1,48 @@
+input[type="file"]::-webkit-file-upload-button {
+		cursor: pointer;
+}
+.file-upload-native:focus,
+.file-upload-text:focus {
+		outline: none;
+}
+.file-upload-text {
+		z-index: 10;
+		padding: 5px 15px 8px;
+		overflow: hidden;
+		font-size: 14px;
+		line-height: 1.4;
+		cursor: pointer;
+		text-align: center;
+		letter-spacing: 1px;
+		text-overflow: ellipsis;
+		color: rgb(144, 162, 148);
+		border: 0;
+		background-color: transparent;
+}
+.file-upload-native {
+		z-index: 15;
+		opacity: 0;
+}
+.preview {
+		display: block;
+		width: 90%;
+		height: 170px;
+		margin: 20px auto;
+		border: 1px solid rgb(221, 221, 221);
+		border-radius: 5%;
+		overflow: hidden;
+}
+.file-upload-wrapper {	
+		display: block;
+		margin: 5px auto;
+}
+.file-upload-native,
+.file-upload-text {
+		
+		display: block;
+		margin-top: -60px;
+		width:100%;
+		
+		margin-bottom:20px;
+		cursor: pointer;
+}

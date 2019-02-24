@@ -1,0 +1,72 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+  }
+a.continue:link,  a.continue:visited {
+  text-decoration: none;
+  letter-spacing: -.015em;
+  font-size: .75em;
+  padding: 0.5em;
+  color: #fff;
+  background: #74546b;
+  font-weight: bold;
+  border-radius: 50px;
+  float: right;
+  text-align: right;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+      padding: 10px 39px;
+    font-size: 15px;
+}
+ a.continue:after {
+  content: "\276f";
+  padding: .5em;
+  position: relative;
+  right: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+ a.continue:hover,  a.continue:focus,  a.continue:active {
+  background: #e79b9b;
+}
+ a.continue:hover:after,  a.continue:focus:after,  a.continue:active:after {
+  right: -10px;
+}
+#navigation {
+	position: absolute;
+	right: 90px;
+	bottom: 0px;
+}
+
+#menu-toggle {
+	display: none;
+	float: right;
+}
+
+@media all and (max-width: 867px) {
+	#navigation {
+	right: 40px;	
+}
+}
+@media all and (max-width: 768px) {
+	#TransIcon
+	{
+		/*add text*/
+	}
+}
+@media all and (max-width: 768px) {
+  #TransIcon:after
+  {
+    content :' Change Language';
+    font-family: Comic Sans MS;
+  }
+}
+
+::-moz-selection { background: #e79c9c; color: #fff; text-shadow: none; }
+::selection { background: #e79c9c; color: #fff; text-shadow: none; }
+

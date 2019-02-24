@@ -1,0 +1,90 @@
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+
+
+
+/* CONTAINERS */
+
+.four { width: 32.26%; max-width: 32.26%;}
+.two { width: 45%; max-width: 45%;min-height: 220px;}
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+    margin-bottom: 50px;
+}
+
+/* FORM */
+
+ .recive-method input,  .payment-plan input,  .payment-type input{
+	display: none;
+}
+
+ label{
+	position: relative;
+	color: #74546b;
+	background-color: #fdfbf8;
+	font-size: 18px;
+	text-align: center;
+	padding: 20px 0;
+	display: block;
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ .recive-method input:checked + label,  .payment-plan input:checked + label,  .payment-type input:checked + label{
+	border: 3px solid #e69b9b;
+	background-color: #74546b;
+	color:white;
+}
+
+ .recive-method input:checked + label:after,  .payment-plan input:checked + label:after,  .payment-type input:checked + label:after{
+	content: "\2713";
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+	border: 2px solid #e69b9b;
+	background-color: #74546b;
+	z-index: 999;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+/**/
+@media all and (max-width: 767px) {
+label {
+    font-size: 14px;
+}
+}
+
+#searchIcon{
+  display: none;
+}

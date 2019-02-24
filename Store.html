@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Store</title>
+		<link rel="icon" href="assets/images/icon.png">
+		
+		<!-- for Boatstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- for Product Icons--> 
+		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700'>	
+		
+
+		<!-- Latest compiled and minified CSS [for Select Element]-->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+		<!-- for price slider -->
+		<link rel='stylesheet prefetch' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+  		<!-- CSS Links -->
+		<link rel="stylesheet" type="text/css" href="assets/css/en.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/search.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/Product.css">
+	</head>
+	<body >
+		<!-- Menu -->
+		<div id="wrap" >
+			<header class="fixedElement">
+				<div class="inner relative">
+					<a class="logo" href="#"><img src="assets/images/icon.png" alt="fresh design web" ></a>
+					<a id="menu-toggle" class="button dark" href="#" ><i class="glyphicon glyphicon-align-justify"></i> </a>
+					<a id="searchIcon" class="searchIcon"><i class="glyphicon glyphicon-search" aria-hidden="true" ></i> </a>
+					<nav id="navigation">
+						<ul id="main-menu">
+							<li class="current-menu-item"><a href="#">Store</a></li>
+							<li><a href="#">Network</a></li>
+							<li class="parent " >
+								<a href="#" id="history_toggle">History </a>
+								<ul class="sub-menu" id="history_submenu">
+									<li><a href="#"> Order History </a></li>
+									<li><a href="#">  Transactions History</a></li>
+									<li><a href="#"> Network History</a></li>
+								</ul>
+							</li>
+							<li><a href="Cart.html"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" ></i> Cart (4)</a></li>
+							<li class="parent"  style="background-image: url()">
+								<a href="#" id="User_toggle"> <i class="glyphicon glyphicon-user"></i> User Name <i class="glyphicon glyphicon-menu-down"></i></a>
+								<ul class="sub-menu" id="User_submenu">
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Favorites</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+							<li ><a href="Store-ar.html" ><i class="glyphicon glyphicon-globe" aria-hidden="true" id="TransIcon"></i> </a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</header>	
+		</div> 
+
+		<!-- Content -->
+		<div class="container" >
+			<div class="row">
+				<!-- searh for mobile mode -->
+				<div class="row " id="searchDivsm">
+					<div class="col-sm-4"> 
+					  <div class="search-input" >
+						  <input type="text">
+						  <span class="highlight"></span>
+						  <span class="bar"></span>
+						  <label>Search here</label>
+						  <span class="glyphicon glyphicon-search"></span>
+						  <span class="glyphicon glyphicon-remove"></span>
+					  </div>
+					</div>
+					<div class="col-sm-4"> 
+						<div id="price-range-sm">
+							<p>Price Range: <span id="slider-price-sm">200 L.E</span> - <span class="slider-price2-sm">500 L.E</span>
+							<div class="sliders_step1-sm">
+								<div id="slider-range-sm"></div>
+							</div>
+							</p>
+					    </div >
+					</div>
+
+					<div class="col-sm-4"> 
+
+						<div class="form-group" >
+							
+							<select id="productList"  class="selectpicker"  data-live-search="true"  multiple data-actions-box="true">
+							  <option id="2" value="5" >1</option>
+							  <option id="22" value="5">2</option> 
+							</select>
+						</div>
+					</div>
+					<div >
+							<a href="#" class="btn continue" >Search</a>
+					  </div>
+				</div>
+
+				<!-- search for normal mode-->
+				<div id="searchDiv">
+					<div >
+						<div data-role="main" class="ui-content">
+							<form method="post" action="/action_page_post.php">
+							  <!--<h3>Filter Data</h3>-->
+							  <div class="search-input">
+								  <input type="text">
+								  <span class="highlight"></span>
+								  <span class="bar"></span>
+								  <label>Search here</label>
+								  <span class="glyphicon glyphicon-search"></span>
+								  <span class="glyphicon glyphicon-remove"></span>
+							  </div>
+							  <div id="price-range" >
+								<p>Price: <span class="slider-price">200</span> - <span class="slider-price2">500</span>
+								<div class="sliders_step1">
+									<div id="slider-range"></div>
+								</div>
+								</p>
+						      </div >
+							  <div class="Cateogry-section">
+								<h4>Cateogry</h4>
+								<div  class="CatFilliter">
+								 <input id="option" type="checkbox" name="field" value="option">
+								 <label for="option"><span><span></span></span>Cosmetics</label> 
+								 </div>
+							  </div>
+							  <div style="margin-top:26px">
+									<a href="#" class="btn continue" >Search</a>
+							  </div>
+						  </form>
+						  </div>
+					</div>
+				</div>
+
+				<!-- Products -->
+				<div class="row products">
+					<div class="col-xs-6 col-sm-4 col-md-3">
+
+							  <div class="product productcontainer" >		
+									<!-- Fornt face of product -->
+									<div class="fornt" >	
+										<span class="new">offer</span>
+										<div class="img-wrap" >
+											<div class="overlay"></div>
+											<div class="Detailsbutton"><a href="Product.html" > More Details </a></div>
+											<div class="add2Cartbutton"><a href="#"> Add to Cart </a></div>
+											<img src="assets/images/image.jpg"  alt="img description" />									
+											<i class="fa fa-heart fav"></i>
+										</div>							
+										<div class="description clearfix">									
+											<div class="content">
+												
+												<h3> Product Name</h3>									
+											</div>
+											<div class="price">
+												<span class="old-price"><del >$50</del></span><span class="new-price" >$30</span>
+											</div>									
+										</div>
+									</div><!-- fornt -->							
+								</div><!-- /product -->
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						  <div class="product productcontainer" >
+								<!-- product -->
+								<div class="fornt" >
+									<div class="img-wrap" >
+										<div class="overlay"></div>
+										<div class="Detailsbutton"><a href="#"> More Details </a></div>
+										<div class="add2Cartbutton"><a href="#"> Add to Cart </a></div>
+										<img src="assets/images/image.jpg"  alt="img description" class="img-responsive" />
+										<i class="fa fa-heart"></i>
+									</div>
+									<div class="description clearfix">
+										<div class="content">
+											<h3> Product Name</h3>
+										</div>
+										<div class="price">
+											<span class="old-price"><del></del></span><span class="new-price">$30</span>
+										</div>
+									</div>
+								</div><!-- fornt -->
+						  </div><!-- /product -->
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						  <div class="product productcontainer" >
+								<!-- product -->
+								<div class="fornt" >
+									<div class="img-wrap" >
+										<div class="overlay"></div>
+										<div class="Detailsbutton"><a href="#"> More Details </a></div>
+										<div class="add2Cartbutton"><a href="#"> Add to Cart </a></div>
+										<img src="assets/images/image.jpg"  alt="img description" />
+										<i class="fa fa-heart"></i>
+									</div>
+									<div class="description clearfix">
+										<div class="content">
+											<h3> Product Name</h3>
+										</div>
+										<div class="price">
+											<span class="old-price"><del></del></span><span class="new-price">$30</span>
+										</div>
+									</div>
+								</div><!-- fornt -->
+						  </div><!-- /product -->
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						  <div class="product productcontainer" >
+								<!-- product -->
+								<div class="fornt" >
+									<div class="img-wrap" >
+										<div class="overlay"></div>
+										<div class="Detailsbutton"><a href="#"> More Details </a></div>
+										<div class="add2Cartbutton"><a href="#"> Add to Cart </a></div>
+										<img src="assets/images/image.jpg"  alt="img description" />
+										<i class="fa fa-heart"></i>
+									</div>
+									<div class="description clearfix">
+										<div class="content">
+											<h3> Product Name</h3>
+										</div>
+										<div class="price">
+											<span class="old-price"><del></del></span><span class="new-price">$30</span>
+										</div>
+									</div>
+								</div><!-- fornt -->
+						  </div><!-- /product -->
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						  <div class="product productcontainer" >
+								<!-- product -->
+								<div class="fornt" >
+									<div class="img-wrap" >
+										<div class="overlay"></div>
+										<div class="Detailsbutton"><a href="#"> More Details </a></div>
+										<div class="add2Cartbutton"><a href="#"> Add to Cart </a></div>
+										<img src="assets/images/image.jpg"  alt="img description" />
+										<i class="fa fa-heart"></i>
+									</div>
+									<div class="description clearfix">
+										<div class="content">
+											<h3> Product Name</h3>
+										</div>
+										<div class="price">
+											<span class="old-price"><del></del></span><span class="new-price">$30</span>
+										</div>
+									</div>
+								</div><!-- fornt -->
+						  </div><!-- /product -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		 <!-- Latest compiled and minified JavaScript [for Select Element] -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+		<!-- for Price Slider -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+		<!-- Scripts Link-->
+		<script type="text/javascript" src="assets/js/store.js"></script>
+		<script type="text/javascript" src="assets/js/rangeSlider.js"></script>
+		<script type="text/javascript" src="assets/js/menu.js"></script>   
+	</body>
+</html>
