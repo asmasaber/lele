@@ -1,0 +1,46 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+	color: #633f59;
+	background-repeat: no-repeat;
+	min-width:346px;
+	background-color:#633f59;
+	direction : ltr;
+}
+.side-section {
+    font-family: Comic Sans MS, sans-serif;
+    color: white;
+    background-color: rgba(99, 63, 89, 0.55);
+	margin-top:100px;
+	margin-bottom:100px;
+	padding-top:90px;
+	padding-bottom:90px
+}
+h1{
+	
+	width: 50%;
+    margin: 0 auto;
+}
+h3{
+	text-decoration: left: 
+	Padding: 25px 8px 2px 8px;
+}
+a{
+	color: #e69b9b;
+	padding-left:6px;
+}
+a:hover {
+	color: #e69b9b;
+}
+@media all and (max-width: 582px) {
+
+h1{
+	width: 90%;
+    margin: 0 auto;
+}
+h3{
+	Padding: 15px 15px 0px 15px;
+}
+}

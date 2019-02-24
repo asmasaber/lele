@@ -27,10 +27,8 @@ a {
 a:hover {
 	color: #000;
 }
-ol, ul {
+#navigation ol,#navigation ul {
 	list-style: none;
-	padding:0px;
-	margin:0px;
 }
 #wrap {
 	margin: 0 auto;
@@ -176,7 +174,7 @@ ul.sub-menu > li > a.parent {
 	}
 	
 	#main-menu li:hover > ul.sub-menu {
-	display: block; /* show the submenu */
+	/*display: block;  show the submenu */
 	
 }
 }
@@ -261,6 +259,7 @@ ul.sub-menu > li > a.parent {
 		color : #e69b9b;/*#77d596;#23dbdb*/
 	}
 
+	
 	ul.sub-menu {
 		display: block;
 		margin-top: -1px;
