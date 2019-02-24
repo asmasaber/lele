@@ -1,0 +1,16 @@
+a {
+	color: #E69B9B;
+}
+.f1-step {
+    width: 24.333333%;
+    padding: 0 5px;
+}
+.form-box {
+    padding-top: 180px;
+}
+@media (max-width: 766px)
+{
+.form-box {
+	padding-top: 65px;
+	}
+}
