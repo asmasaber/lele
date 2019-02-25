@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>LELE | Name </title>
+		<link rel="icon" href="assets/images/icon.png">
+		
+		<!-- for Boatstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Latest compiled and minified CSS [for Select Element]-->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+  		<!-- CSS Links -->
+		<link rel="stylesheet" type="text/css" href="assets/css/ar.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/menu-ar.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/Profile-ar.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/footer-ar.css">
+	</head>
+	<body>
+		<!-- Menu -->
+		<div id="wrap" >
+			<header class="fixedElement">
+				<div class="inner relative">
+					<a class="logo" href="#"><img src="assets/images/icon.png" alt="fresh design web" ></a>
+					<a id="menu-toggle" class="button dark" href="#" ><i class="glyphicon glyphicon-align-justify"></i> </a>
+					<a id="searchIcon" class="searchIcon"><i class="glyphicon glyphicon-search" aria-hidden="true" ></i> </a>
+					<nav id="navigation">
+						<ul id="main-menu">
+							<li class="current-menu-item"><a href="#">Store</a></li>
+							<li><a href="#">Network</a></li>
+							<li class="parent " >
+								<a href="#" id="history_toggle">History </a>
+								<ul class="sub-menu" id="history_submenu">
+									<li><a href="#"> Order History </a></li>
+									<li><a href="#">  Transactions History</a></li>
+									<li><a href="#"> Network History</a></li>
+								</ul>
+							</li>
+							<li><a href="Cart.html">
+							<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true" ></i>
+							<span class="cart-thumbnail__quantity" aria-hidden="true">2</span>
+							 Cart
+							</a>
+							</li>
+							 
+							
+							<li class="parent"  style="background-image: url()">
+								<a href="#" id="User_toggle"> <i class="glyphicon glyphicon-user"></i> User Name <i class="glyphicon glyphicon-menu-down"></i></a>
+								<ul class="sub-menu" id="User_submenu">
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Favorites</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+							<li ><a href="Store-ar.html" ><i class="glyphicon glyphicon-globe" aria-hidden="true" id="TransIcon"></i> </a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</header>	
+		</div> 
+		<div class="container" >
+		  <div class="row" style="margin-top:40px;">
+			<div class="col-md-4">
+				<div class="imgSection" >
+					 <span class="rank-section"><span class="rank">Rank: M</span></span>
+					<div id="idImg" class="preview img-wrapper" onclick="document.getElementById('selectedFile').click();">
+					</div>
+					<div class="file-upload-wrapper">
+							<input id="selectedFile" type="file" name="file" class="file-upload-native" accept="image/*" />
+							<input id="selectedFilePath" type="text" disabled placeholder="upload image" class="file-upload-text" />
+					</div>
+					
+					<h2 id="name" >User Name <a  id="editName"> Edit </a></h2>
+					
+					<div id="editNameSection">
+						<input id="newName" type="text" class="form-control nameInput" />
+						<div class="EditButtonsNameSection">
+							<button id="saveEditName" type="button" class="saveBtn"> Save Changes </button>
+							<button id="cancleEditName" type="button" > Cancle</button>
+						</div>
+					</div>
+					<p class="usrCode">#code</p>
+				</div>
+			</div>
+			<div class="col-md-8" style="min-height: 540px">
+				
+				<div class="infoSection">
+					 
+					<h2 >Profile Info.</h2>
+					<table class="table">
+						<tr>
+							<td >
+								<h4 > Phone </h4>
+							</td>
+							<td >
+								<p id="phone">01061750033</p>
+								<div id="editPhoneSection" class="editSection">
+									<input id="newPhone" type="text" class="form-control" />
+									<p id="MobileError" class="error" ></p>
+									<div class="EditButtonsSection" >
+										<button id="saveEditPhone" type="button" class="saveBtn "> Save Cahnges</button>
+										<button id="cancleEditPhone" type="button" > Cancle</button>
+									</div>
+								</div>
+							</td>
+							<td class="editCell">
+								<a id="editPhone" > Edit </a>
+							</td>
+						</tr>
+						<tr>
+							<td >
+								<h4 > Gender </h4>
+							</td>
+							<td>
+								<p id="gender"> Male </p>
+								<div id="editGenderSection" class="editSection">
+									<input type="radio" name="gender" value="male"> Male
+									<input type="radio" name="gender" value="female"> Female	
+									<div class="EditButtonsSection">
+										<button type="button" class="saveBtn"> Save Changes</button>
+										<button id="cancleEditGender" type="button" > Cancle</button>
+									</div>
+								</div>
+							</td>
+							<td class="editCell">
+								<a id="editGender"> Edit </a>
+							</td>
+						</tr>
+						<tr>
+							<td >
+								<h4> Address </h4>
+							</td>
+							<td >
+								<p id="address" > Assuit, Asuit st. , bla bla bla bla bla  </p>
+								<div id="editAddressSection" class="editSection">
+									<select class="selectpicker form-control">
+									  <option value="volvo">Volvo</option>
+									  <option value="saab">Saab</option>
+									  <option value="mercedes">Mercedes</option>
+									  <option value="audi">Audi</option>
+									</select>
+									<select class="selectpicker form-control">
+									  <option value="volvo">Volvo</option>
+									  <option value="saab">Saab</option>
+									  <option value="mercedes">Mercedes</option>
+									  <option value="audi">Audi</option>
+									</select>
+									<textarea id="newArea" rows="4" cols="50" class="form-control"></textarea>
+									<div class="EditButtonsSection">
+										<button id="saveEditAdrress" type="button" class="saveBtn"> Save Changes</button>
+										<button id="cancleEditAddress" type="button" > Cancle</button>
+									</div>
+								</div>
+							</td>
+							<td class="editCell">
+								<a id="editAddress" > Edit </a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4> Heir </h4>
+							</td>
+							<td>
+								<p id="heir"> Heir Name <br/><br/>  12345678912345  </p>
+								<div id="editHeirSection" class="editSection"> 
+									<input id="newHeirName" type="text" placeholder="Heir Name..." class="form-control"/>
+									<input id="newHeirID" type="text" placeholder="Heir ID..." class="form-control"/>
+									<p id="HeirError" class="error" ></p>
+									<div class="EditButtonsSection">
+										<button id="saveEditHeir" type="button" class="saveBtn"> Save Changes </button>
+										<button id="cancleEditHeir" type="button" > Cancle</button>
+									</div>
+								</div>
+							</td>
+							<td class="editCell">
+								<a id="editHeir"> Edit </a>
+							</td>
+						</tr>
+						<tr>
+							 <td colspan="3"><a id="editPassword">Change Password</a>
+								 <div id="editPasswordSection" class="editSection" >
+									<h4 style="text-align:center"> Change Password</h4>
+									<table class="table changePassTb" style="">
+										<tr>
+											<td style="border-top: 0px ">
+												<h5 style="padding-left: 25px;"> Current Password </h4>
+											</td>
+											<td style="border-top: 0px ">
+												<input id="oldPassword" type="Password" class="form-control"/>
+											</td>
+										</tr>
+										<tr>
+											<td style="border-top: 0px ">
+												<h5 style="padding-left: 25px;"> New Password </h4>
+											</td>
+											<td style="border-top: 0px ">
+												<input id="newPassword" type="Password" class="form-control"/>
+												<p id="PassError" class="error" ></p>
+											</td>
+										</tr>
+										<tr>
+											<td style="border-top: 0px ">
+												<h5 style="padding-left: 25px;" > Confirm New Password </h4>
+											</td>
+											<td style="border-top: 0px ">
+												<input id="repeatPassword" type="Password" class="form-control"/>
+												<p id="repeatPassError" class="error" ></p>
+											</td>
+										</tr>
+									</table>
+									<div class="EditButtonsSection">
+										<button id="saveEditPassword" type="button" class="saveBtn" > Save Change </button>
+										<button id="cancleEditPassword" type="button" > Cancle</button>
+									</div>
+								 </div>
+							 </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="footer-grids">
+				<div class="footer one">
+					<h3>More About Company</h3>
+					<p> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
+					
+					<div class="clear"></div>
+				</div>
+				<div class="footer two">
+					<h3>Keep Connected</h3>
+					<ul>
+						<li><a class="fb" href="#"><i></i>Like us on Facebook</a></li>
+						<li><a class="insta" href="#"><i></i>Follow us on Instgram</a></li>
+						<li><a class="lnkd" href="#"><i></i>Add us on Linked in </a></li>
+						
+					</ul>
+				</div>
+				<div class="footer three">
+					<h3>Contact Information</h3>
+					<ul>
+						<li>The company name <span>Lorem ipsum dolor,</span>Glasglow Dr 40 Fe 72.  </li>
+						<li>1234567890  </li>
+						<li><a href="mailto:info@example.com">contact@example.com</a> </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		</div>
+		<div class="copy-right-grids">
+			<div class="copy-left">
+					<p class="footer-gd">© 2017 Lele . All Rights Reserved | Design by <a href="#" target="_blank">bla bla </a></p>
+			</div>
+			<div class="copy-right">
+				<ul>
+					<li><a href="#">Company Information</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+		 <!-- Latest compiled and minified JavaScript [for Select Element] -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="assets/js/Profile.js"></script>   
+		<script type="text/javascript" src="assets/js/menu.js"></script>   
+
+	<script>
+		
+	</script>
+</body>
+</html>

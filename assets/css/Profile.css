@@ -1,0 +1,261 @@
+body{
+	min-width: 377px;
+}
+a{
+	color: #e69b9b;
+	cursor: pointer;
+}
+h4{
+	padding-left: 25px;
+}
+.container{
+	margin-top: 70px
+}
+
+.imgSection{
+	width:90%;
+	margin:auto;
+	background-color:rgba(242, 222, 222, 0.44);
+	min-height:450px;
+	padding-top:40px;
+}
+#idImg{
+	width:200px;
+	margin:auto;
+	background-color:white;
+	height:200px;    
+	border: 5px solid;
+	border-color: rgb(230, 155, 155);
+	border-radius: 50%;
+	background : url('../images/add-user.png') no-repeat center center;
+}
+.file-upload-wrapper{
+	display: none;
+}
+
+h2#name{
+	text-align: center;margin-top: 60px;color:#74546b
+}
+a#editName{
+		display:none;
+		cursor:pointer;
+		font-size: 12px; 
+		position: absolute;
+		margin-left: -12px;
+		margin-top: -12px;
+		color: #e69b9b;
+}
+#editNameSection{
+	display:none;
+	width:90%;
+	margin:auto;
+	margin-top: 60px;
+	    margin-bottom: 20px;
+}
+#name:hover #editName{
+	display:inline;
+}
+.nameInput{
+	width:90%;
+	margin:auto;
+}
+.saveBtn{
+	background: #74546b; 
+	border-color: #74546b;
+	color: white;
+}
+.EditButtonsSection{
+	width: 75%;
+	float:right;
+	margin-top: 10px;
+}
+.EditButtonsNameSection
+{
+	width: 90%;
+    margin: auto;
+	margin-top: 10px;
+}
+#editNameSection{
+	width:73%;
+	margin:auto; 
+	margin-top: 10px;    
+}
+.usrCode{
+	text-align:center;
+	color:rgba(0,0,0,.25);
+	font-weight:bold;
+	display:block;
+}
+.infoSection{
+	width:100%;
+	margin:auto;
+	background-color:rgba(242, 222, 222, 0.44);
+	min-height:450px;
+	padding-top:40px;
+	position: relative;
+}
+
+.infoSection h2{
+	text-align: center;color:#74546b;    margin-top: 0;
+}
+.table{
+	color: #74546b;margin-top:60px;
+}
+.table>tbody>tr>td{
+	border-top: 0px ;
+}
+td.editCell{
+	text-align: center;padding-top: 16px;
+}
+
+.editSection{
+	display: none;
+}
+#editPasswordSection{
+	width:80%;
+	margin:auto;
+}
+.selectpicker{
+	width: 50%;
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*=col-] {
+    float: left;
+    display: inline-block;
+    margin-left: 0;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.changePassTb{
+	color: #74546b;
+	
+	margin-top: 0;
+}
+#editPassword{
+	margin-left: 10px;
+}
+.table .table{
+	background-color: transparent;
+}
+.form-control{
+	width:75%;
+	margin:5px;
+}
+textarea.form-control {
+    width: 80%;
+    }
+#newName{
+	width:97%;
+}
+
+.error {
+    color: #e69b9b;
+    padding-left: 15px;
+}
+.input-error { border-color: #e79b9b; }
+
+
+.rank-section {
+  position: absolute;
+  top: -6px;
+  right: 29px;
+}
+
+.rank-section:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 6px solid #74546b;
+}
+
+.rank {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background: #74546b;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 6px;
+  border-top-right-radius: 8px;
+  width: 115px;
+}
+
+.rank:before,
+.rank:after {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+.rank:before {
+  background: #74546b;
+  height: 7px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+}
+
+.rank:after {
+  background: #74546b;
+  height: 7px;
+  width: 8px;
+  border-radius: 8px 8px 0 0;
+  left: -8px;
+  top: 0;
+}
+
+@media (max-width: 994px) {
+	.imgSection{
+		width:100%;
+		min-height: 360px;
+	}
+	.rank-section {
+	  right: 15px;
+	}
+    .EditButtonsNameSection{
+	width: 34%;
+	}
+}
+
+@media (max-width: 717px) {
+	 .EditButtonsNameSection{
+	width: 55%;
+	}
+}
+
+@media (max-width: 464px) {
+.EditButtonsSection{
+	width: 98%;
+}
+ .EditButtonsNameSection{
+	width: 80%;
+	}
+	.form-control {
+    width: 95%;
+}
+#editPasswordSection {
+    width: 95%;
+    }
+
+    #editPasswordSection .EditButtonsSection{
+	width: 75%;
+}
+textarea.form-control {
+    width: 100%;
+    }
+    .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*=col-] {
+    width: 47%;
+}
+}
+
+.form-control:focus {
+    border-color: #74546b;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(115, 82, 105, 0.37);
+}
